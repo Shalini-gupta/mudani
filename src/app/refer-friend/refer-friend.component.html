@@ -1,0 +1,165 @@
+<app-header></app-header>
+
+<section class="getStock boxs" id="ReferFriend">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+
+                <!-- <div class="MainWheel">
+                    <div id="wheel">
+                        <div id="inner-wheel">
+                            <div class="sec"><span id="bell" class="fa fa-bell-o"></span></div>
+                            <div class="sec"><span id="comment" class="fa fa-comment-o"></span></div>
+                            <div class="sec"><span id="smile" class="fa fa-smile-o"></span></div>
+                            <div class="sec"><span id="heart" class="fa fa-heart-o"></span></div>
+                            <div class="sec"><span id="star" class="fa fa-star-o"></span></div>
+                            <div class="sec"><span id="lightbulb" class="fa fa-lightbulb-o"></span></div>
+                        </div>
+
+                        <div id="spin">
+                            <div id="inner-spin"></div>
+                        </div>
+
+                        <div id="shine"></div>
+                    </div>
+
+                    <div id="txt"></div>
+                    <div class="whiteBg"></div>
+                </div> -->
+
+                <div class="MainWheel">
+                    <div id="wheel">
+                        <div id="inner-wheel">
+                            <div class="sec">
+                                <span id="bell"><img src="assets/images/Spin-8.png"></span>
+                            </div>
+                            <div class="sec">
+                                <span id="comment"><img src="assets/images/Spin-2.png"></span>
+                            </div>
+                            <div class="sec">
+                                <span id="smile"><img src="assets/images/Spin-3.png"></span>
+                            </div>
+                            <div class="sec">
+                                <span id="heart"><img src="assets/images/Spin-4.png"></span>
+                            </div>
+                            <div class="sec">
+                                <span id="star"><img style="filter: brightness(0) invert(1);"
+                                        src="assets/images/Spin-7.png"></span>
+                            </div>
+                            <div class="sec">
+                                <span id="lightbulb"><img src="assets/images/Spin-5.png"></span>
+                            </div>
+                        </div>
+
+                        <div id="spin">
+                            <!-- <div id="inner-spin"></div> -->
+                        </div>
+
+                        <!-- <div id="shine"></div> -->
+                    </div>
+
+                    <!-- <div id="txt"></div> -->
+                    <!-- <div class="whiteBg"></div> -->
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="getStockRight">
+                    <h2 class="mainHead">
+                        Refer a friend and
+                        <span class="colorBlue">get a free stock.</span>
+                    </h2>
+
+                    <p class="headmain">Refer a friend, spin the wheel, and get a free stock. Once your friend signs up
+                        & funds their account, you will be rewarded with the stock. It’s that simple.</p>
+
+
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#refer" class="btnsAll ">Spin the
+                        wheel</a>
+
+                    <h6>
+                        <span>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            Free Stock Disclosure :
+                        </span>
+                        The free stock offer is available to new members only, subject to the terms and conditions of
+                        Mudani. Once your friend signs up, you both will be rewarded with a free stock. It’s that
+                        simple.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="ModalBox">
+    <div id="refer" class="modal " role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a class="CloseModal" data-dismiss="modal">×</a>
+                        <div class="row referFrnd">
+                            <div class="col-sm-12">
+                                <form [formGroup]="referForm" (ngSubmit)="referSubmit()">
+                                    <h2 class="mainHead">Refer a friend, get rewarded</h2>
+                                    <div class="form-group mt-5 mb-5">
+
+                                        <input type="text" (click)="scroll('ReferFriend')" formControlName="yourEmail"
+                                            class="form-control" placeholder="Your Email">
+                                        <!-- <p class="valdoyst" style="color: #FF0000;text-align: left;font-size: 14px;"
+                                            *ngIf="referForm.controls.yourEmail.hasError('required')">
+                                            Your Email is required
+                                        </p> -->
+                                    </div>
+                                    <div class="form-group mt-5 mb-5">
+                                        <input type="text" formControlName="friendEmail" class="form-control"
+                                            placeholder="Friends Email">
+                                        <!-- <p class="valdoyst" style="color: #FF0000;text-align: left;font-size: 14px;"
+                                            *ngIf=" referForm.controls.friendEmail.hasError('required')">
+                                            Friend Email is required
+                                        </p> -->
+                                    </div>
+                                    <div class="roundBtn">
+                                        <!-- <button type="submit" data-dismiss="modal"
+                                            class="Button btnSpin apply_btn">Refer a friend</button> -->
+                                        <button type="submit" class="Button btnSpin apply_btn"
+                                            [disabled]="referForm.invalid">Spin the wheel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ModalBox">
+    <div id="thankYou" class="modal " role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a class="CloseModal" data-dismiss="modal">×</a>
+
+                        <div class="Thanks2">
+                            <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h1>Congrats! </h1>
+                            <div class="Name">
+                                <h4>Nokia (NOK)</h4>
+                                <figure><img src="assets/images/nokia.png"></figure>
+                            </div>
+
+                            <p>Once your friend signs up, you both will be rewarded with a free stock. It’s that simple.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

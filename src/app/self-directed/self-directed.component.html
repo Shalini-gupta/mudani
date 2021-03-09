@@ -1,0 +1,205 @@
+<app-header></app-header>
+
+
+<section class="selfDirected boxs">
+
+    <div class="container-fluid">
+        <div class="selfDirectInner">
+            <h2 class="mainHead">Do it <span class="colorBlue">yourself</span></h2>
+            <p class="headmain">Start investing on your own terms for free.</p>
+        </div>
+
+        <div class="selfBox">
+            <h2 class="inner">Self-directed account</h2>
+            <p class="headmain">A self-directed brokerage account is one in which you have complete control over how you
+                invest & trade stocks. Mudani offers $0 commission on all stock & ETFs trades.</p>
+            <a [routerLink]="['/sign-up']" class="btnsAll howWorky">Learn more</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="howWork sliderArrow boxs" style="padding: 75px 0px 20px">
+    <div class="container-fluid">
+        <h2 class="mainHead">How it works</h2>
+        <p class="headmain">In five simple steps.</p>
+
+        <owl-carousel-o [options]="customOptions55">
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Tell us about you.</h2>
+                    <p class="headmain">We’ll ask you a short series of questions to be in compliant with regulators.
+                    </p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Make your own basket.</h2>
+                    <p class="headmain">You can browse thousands of stocks, ETFs, and crypto to add to your portfolio.
+                        Or, you can skip right to trading.
+                        <!-- <a [routerLink]="['/themantic']">Thematic Baskets</a> -->
+                    </p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Fund your account.</h2>
+                    <p class="headmain">Link your external bank account securely and seamlessly through our app and make
+                        a deposit.</p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Start Investing.</h2>
+                    <p class="headmain">Start trading and build up your portfolio to create a better financial future.
+                    </p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Track your account</h2>
+                    <p class="headmain">Monitor the performance of your portfolio in real-time at your fingertips.</p>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+        <div class="dotsCss pt-5">
+            <ul>
+                <li class="custom-next-click active"></li>
+                <li class="custom-next-click active"></li>
+                <li class="custom-next-click active none"></li>
+                <li class="custom-next-click"></li>
+                <li class="custom-next-click"></li>
+            </ul>
+        </div>
+
+        <div class="sliderDown">
+            <p> Cant choose? Let us help you
+                <a [routerLink]="['/pricing']"> decide.</a>
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="whatGet boxs">
+    <div class="container-fluid">
+        <div class="getInner">
+            <h2>What you <span class="colorBlue"> get?</span></h2>
+            <p class="headmain">All the features you want in one app.</p>
+        </div>
+        <div class="getAccordian">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="discord-self">
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="active">
+                                <i class="fa fa-minus"></i>
+                                <span>Instant account opening</span>
+                            </a>
+                            <div class="content content2" style="display: block;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Create an account in 5 minutes on the Mudani app. You’ll be rewarded with a free stock! Most accounts are approved same day.</p>
+                                        <div class="PieArea">
+                                            <img src="assets/images/Instant2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus  "></i>
+                                <span>Fractional share trading</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>We offer the ability for users to buy & sell fractional shares. You set the
+                                            dollar amount you wish to invest. </p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/pie.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus  "></i>
+                                <span>Crypto Trading </span>
+                            </a>
+
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>We partner with APEX Crypto to offer cryptocurrency trading in Bitcoin (BTC),
+                                            Ethereum (ETH), Litecoin (LTC), and Ripple (XRP).</p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/Crypto.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus"></i>
+                                <span> Fantasy Games & Rewards</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Play for free. Win free stocks, gift cards, and more while playing our weekly
+                                            fantasy games. A great opportunity to learn the markets at no cost!</p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/FanstasyGames.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus"></i>
+                                <span> Options & Margin Trading</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Feeling a little risky? Options are a popular way to hedge your positions and
+                                            deliver higher percentage gains. $0 commissions with premium.</p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/margin.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-5">
+                    <div class="pie"></div>
+                </div> -->
+            </div>
+            <div class="getBtns">
+                <a [routerLink]="['/sign-up']" class="btnsAll text-transform">
+                    Get started
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

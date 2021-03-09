@@ -1,0 +1,136 @@
+<app-header></app-header>
+
+<section class="retairement boxs">
+    <div class="container-fluid">
+        <div class="retairmentInner">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="retairmentLeft">
+                        <h2 class="mainHead">Invest in your <br><span class="colorBlue">future self.</span></h2>
+                        <p class="headmain">We make it easy to open a Traditional, Roth or SEP IRA. And you don’t have to be a Wall Street whiz to manage it. We’ll recommend a tailored-fit portfolio after you answer our risk-based retirement questionnaire.</p>
+                        <h2 class="inner">Invest now. Smile later.
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="retairmentRight">
+                        <img src="assets/images/retairment2.png" alt="retairment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rollOver boxs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="rollIn">
+                    <div class="rollImg">
+                        <img src="assets/images/roll.png" alt="roll">
+                    </div>
+                    <h2 class="inner">Roll over</h2>
+                    <p class="headmain">Quit your job and don’t know what to do with your 401(K) check? Roll it over and start investing. </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="rollIn">
+                    <div class="rollImg">
+                        <img src="assets/images/transfer.png" alt="transfer">
+                    </div>
+                    <h2 class="inner">Transfer</h2>
+                    <p class="headmain">Have an existing IRA? Roll it over to Mudani and we’ll manage it for you.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="rollIn">
+                    <div class="rollImg">
+                        <img src="assets/images/open.png" alt="open">
+                    </div>
+                    <h2 class="inner">Open</h2>
+                    <p class="headmain">Ready to start saving for retirement? Open an IRA retirement account instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="totalSum boxs">
+    <div class="container-fluid">
+        <div class="row" style="align-items: center;">
+            <div class="col-sm-6">
+                <div class="totalLeft">
+                    <h2 class="mainHead">How much money should I be investing for retirement?</h2>
+                    <p class="headmain ret">See below with our retirement calculator.</p>
+                    <p class="headmain spanPare">
+                        I am
+                        <span class="spanInput">
+                            <input type="text" class="form-control" (input)="minAge($event.target.value)">
+                        </span>
+                        years old, I’d like to retire at
+                        <span class="spanInput">
+                            <input type="text" class="form-control" (input)="maxAge($event.target.value)">
+                        </span>.
+                        I currently have saved $
+                        <span class="spanInput">
+                            <input type="text" class="form-control" (input)="saveamount($event.target.value)">
+                        </span>
+                        in my lifetime. When I retire, my invested cash will be worth
+                        <span class="totalCo"> ${{investedValue}} </span>
+                        <!-- Per month. -->
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="totalRight">
+                    <img src="assets/images/coin_men.png" alt="coin">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Traditional boxs">
+    <div class="container-fluid">
+        <div class="traditionalIn">
+            <h2 class="mainHead"> Which type of retirement <span class="colorBlue">account do I open?</span> </h2>
+        </div>
+        <!-- 
+        <div class="traditionTop">
+            <h2 class="inner"> How to start investing your money </h2>
+            <p class="headmain">Why is high-end customized portfolio management only readily available to the wealthy?
+                Why do my palms immediately start sweating when I hear financial terms like Index Funds, ETFs and
+                Municipal Bonds?</p>
+            <a href="http://mudani.com/blogs/2021/01/09/how-to-start-investing-your-money">Learn more</a>
+        </div>
+         <div class="traditionTop">
+            <h2 class="inner"> A Kodak Moment: Tech Titans Rally </h2>
+            <p class="headmain">Talk about a flashy headline. Kodak is infamously known as the camera film company
+                missing the shift to digital photography, but now they’re back with a brand new look. The 132-year-old
+                company will be reorienting a part of its factory to produce drug ingredients under a new Kodak
+                Pharmaceutical division. Yes, you read that correctly – they’re trading in Photos for Pharma.</p>
+            <a href="http://mudani.com/blogs/2021/01/09/a-kodak-moment-tech-titans-rally/">Learn more</a>
+        </div> -->
+        <div class="traditionTop">
+            <h2 class="inner"> Roth vs. Traditional </h2>
+            <p class="headmain">It’s a strategy that involves splitting up your investment portfolio into different types of assets that behave differently. Diversification is one of those finance buzzwords that people use and don’t actually explain. Maybe you read that diversification is good for your portfolio — and maybe you even know that it’s because it reduces risk. But why? And how?</p>
+            <a href="http://mudani.com/blogs/2021/01/09/diversification-what-you-need-to-know/">Read more</a>
+        </div>
+    </div>
+</section>
+
+<section class="retirmentAcc boxs">
+    <div class="container-fluid">
+        <div class="retireAcIn">
+            <h2 class="mainHead">Have retirement accounts <br> elsewhere?</h2>
+            <p class="headmain">Transfer your account to Mudani in less than 5 minutes. Get a free stock too!</p>
+            <a [routerLink]="['/sign-up']">Transfer my account </a>
+            <div class="retireLine"></div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

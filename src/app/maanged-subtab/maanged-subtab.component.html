@@ -1,0 +1,270 @@
+<app-header></app-header>
+
+<section class="selfDirected boxs">
+    <div class="container-fluid">
+        <div class="selfDirectInner">
+            <h2 class="mainHead">We do it <span class="colorBlue">for you</span></h2>
+            <p class="headmain">Our software creates a tailored-fit portfolio for you.</p>
+        </div>
+        <div class="selfBox">
+            <h2 class="inner">Managed account</h2>
+            <p class="headmain">Once funds are deposited, our <a class="Openmodal" href="javascript:void(0)"
+                    data-toggle="modal" data-target="#advisor"> robo advisor</a> solution puts your money to work
+                automatically. Sit back, relax, and enjoy your investing journey.</p>
+            <a [routerLink]="['/sign-up']" class="btnsAll howWorky">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section class="howWork sliderArrow boxs" style="padding: 75px 0px 20px">
+    <div class="container-fluid">
+        <h2 class="mainHead">How it works</h2>
+        <p class="headmain">In five simple steps.</p>
+        <owl-carousel-o [options]="customOptions55">
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Tell us about you. </h2>
+                    <p class="headmain">We’ll ask you a short series of questions to determine your financial profile, 
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#risk">risk tolerance</a>, and 
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#risk">time horizon</a>.
+                    </p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Get a customized portfolio. </h2>
+                    <p class="headmain">Mudani’s <a class="Openmodal" href="javascript:void(0)" data-toggle="modal" data-target="#advisor"> robo advisor</a> will generate a customized investment portfolio for you consisting of stocks, ETF’s, and even crypto.</p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Fund your account. </h2>
+                    <p class="headmain">Link your external bank account securely and seamlessly through our app and make a deposit.</p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Track your portfolio. </h2>
+                    <p class="headmain">Monitor the performance of your portfolio in real-time at your fingertips.</p>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="whiteCard">
+                    <h2 class="inner">Add a thematic basket. </h2>
+                    <p class="headmain">Add a specialty thematic portfolio to get exposure to certain themes or sectors.
+                    </p>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+
+        <div class="dotsCss pt-5">
+            <ul>
+                <li class="custom-next-click active"></li>
+                <li class="custom-next-click active"></li>
+                <li class="custom-next-click active none"></li>
+                <li class="custom-next-click"></li>
+                <li class="custom-next-click"></li>
+            </ul>
+        </div>
+
+        <div class="sliderDown">
+            <p>Can’t choose? Check out our questionnaire
+                <a [routerLink]="['/pricing']"> here</a>
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="whatGet boxs">
+    <div class="container-fluid">
+        <div class="getInner">
+            <h2>What you <span class="colorBlue"> get?</span></h2>
+            <p class="headmain">All the features you want in one app.</p>
+        </div>
+        <div class="getAccordian">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="discord-self">
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="active">
+                                <i class="fa fa-minus  "></i>
+                                <span>Instant Account Opening</span>
+                            </a>
+                            <div class="content content2" style="display: block;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Create an account in 5 minutes on the Mudani app. You’ll be rewarded with a
+                                            free stock! Most accounts are approved same day.</p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/Instant2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus  "></i>
+                                <span> Professionally Managed</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>We’ve built a sophisticated tech-driven robo-advisor for every type of
+                                            investor. We’re experts in passive investing. We’ll build you a globally
+                                            diversified portfolio of stocks & ETF’s within minutes.</p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/Professional.png" alt="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="set set2 ">
+                            <a href="javascript:void(0)" class=""><i class="fa fa-plus  "></i><span> Round-up
+                                    Investing</span></a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                            Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                                        <div class="PieArea"> 
+                                            <img src="assets/images/RoundupInvesting.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus  "></i>
+                                <span> Thematic Baskets</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Thematic investing aims to identify macro-level trends. We offer our actively
+                                            managed thematic portfolios for $1 a month! Add these to any Mudani account.
+                                        </p>
+
+                                        <p>
+                                            <a style="font-size: 15px" [routerLink]="['/themantic']">Learn more</a>
+                                        </p>
+
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/Thematic.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus  "></i>
+                                <span> Round-up Investing</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Link your card and invest your spare change.  If enabled, at the end of each
+                                            month, we will automatically transfer over all of your rounded up change to
+                                            invest directly into your managed account.</p>
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/RoundupInvesting.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set set2 ">
+                            <a href="javascript:void(0)" class="">
+                                <i class="fa fa-plus  "></i>
+                                <span> Fantasy Games & Rewards</span>
+                            </a>
+                            <div class="content content2" style="display: none;">
+                                <div class="cont_full getDisplay">
+                                    <div class="piePara">
+                                        <p>Play for free. Win free stocks, gift cards, and more while playing our weekly
+                                            fantasy games. A great opportunity to learn the markets at no cost!</p>
+
+                                        <p>
+                                            <a style="font-size: 15px" href="javascript:void(0);">Learn more</a>
+                                        </p>
+
+                                        <div class="PieArea">
+                                            <!-- <div class="pie"></div> -->
+                                            <img src="assets/images/Reward.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-5">
+                    <div class="pie"></div>
+                </div> -->
+            </div>
+            <div class="getBtns">
+                <a [routerLink]="['/sign-up']" class="btnsAll text-transform" style="text-transform: inherit;">
+                    Get started
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="ModalBox">
+    <div id="advisor" class="modal " role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a class="CloseModal" data-dismiss="modal">×</a>
+                        <div class="Thanks2">
+                            <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal">×</a>
+
+                            <p style="font-size: 16px !important; font-family: 'RobotoRegular'; line-height: 31px;">
+                                Robo-advisors are digital platforms that provide automated algorithm-driven financial
+                                advice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="risk" class="modal " role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a class="CloseModal" data-dismiss="modal">×</a>
+                        <div class="Thanks2">
+                            <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal">×</a> 
+
+                            <p style="font-size: 16px !important; font-family: 'RobotoRegular'; line-height: 31px;">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

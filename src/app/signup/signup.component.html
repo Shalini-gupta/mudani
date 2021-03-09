@@ -1,0 +1,63 @@
+<app-header></app-header>
+
+<section>
+	<div class="SignupArea">
+
+		<div class="Logo">
+			<a [routerLink]="['']">
+				<img src="assets/images/Mudani-Final-Logo.svg">
+			</a>
+		</div>
+
+		<!-- <h1>Investing for all. By the people, <span> for the people</span></h1> -->
+		<h1>The new era of investing. <span> Where the power is with the people.</span></h1>
+
+		<form [formGroup]="earlyForm" (ngSubmit)="earlySubmit()">
+			<div>
+				<input type="email" placeholder="Enter Email Address" formControlName="email">
+
+				<p style="color: #FF0000" *ngIf="earlySubmitCheck && earlyForm.controls.email.hasError('required')">
+					Email is required</p>
+				<p style="color: #FF0000" *ngIf="earlySubmitCheck && earlyForm.controls.email.hasError('email')">Email
+					is not valid</p>
+			</div>
+			<!-- <button data-toggle="modal" data-target="#Access">Get early access</button> -->
+			<button type="submit" data-dismiss="modal">Get early access</button>
+		</form>
+
+		<div class="Phone">
+			<img src="assets/images/Sign-phone.png">
+		</div>
+
+
+	</div>
+</section>
+
+<div class="ModalBox">
+	<div id="Access" class="modal " role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="Decline">
+						<a class="CloseModal" data-dismiss="modal">×</a>
+
+						<div class="ReferingArea">
+							<a [routerLink]="['/']" class="CloseModal" data-dismiss="modal">×</a>
+							<h1>Great! You’re on <span>the waitlist.</span></h1>
+
+							<h6>Want early access?</h6>
+
+							<p>Skip the line by referring friends</p>
+
+							<a [routerLink]="['/refer-friend']" class="btnsAll" data-dismiss="modal">Refer a Friend</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<app-footer></app-footer>

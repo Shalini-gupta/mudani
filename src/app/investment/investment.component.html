@@ -1,0 +1,170 @@
+<app-header></app-header>
+
+<section class="investmentSec boxs">
+    <div class="container-fluid">
+        <div class="investInner investInner33">
+            <h2 class="mainHead ">Our Investment Strategy</h2>
+            <p class="headmain">Our core managed portfolios are composed of low-cost ETFs and stocks. </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="madeThis boxs InvestmentFlip">
+    <div class="container-fluid">
+        <div class="madeThisIn">
+            <h2 class="mainHead" style="margin-bottom: 30px">
+                Investment
+                <span class="colorBlue">Selection</span>
+            </h2>
+            <!-- <p class="headmain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="flip FirstFlip">
+                        <div class="iconInner front">
+                            <div class="globeImg">
+                                <img src="assets/images/expert.png" alt="globe">
+                            </div>
+                            <div class="globeContent">
+                                <p>Our Experts</p>
+                            </div>
+                        </div>
+                        <div class="iconInner back">
+                            <div class="globeDetail">
+                                <p>Our algorithms help create a diversified portfolio recommendation that fits your
+                                    financial profile.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="flip FirstFlip">
+                        <div class="iconInner front">
+                            <div class="globeImg">
+                                <img src="assets/images/spider.png" alt="globe">
+                            </div>
+                            <div class="globeContent">
+                            </div>
+                        </div>
+                        <div class="iconInner back">
+                            <div class="globeDetail">
+                                <p>We use the best ETF providers in the market. Low-cost indexed ETFs are amongst the
+                                    least expensive and most tax-efficient means of investing in the financial markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="investAl boxs">
+    <div class="container-fluid">
+        <div class="incestInner">
+            <h2 class="mainHead">What you’re <span class="colorBlue"> invested in</span></h2>
+            <p class="headmain">Mudani uses the below asset classes across our core managed portfolios</p>
+
+            <div class="investmentPie">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a
+                            href="http://www.arenastage.org/shows-tickets/sub-text/2011-12-season/the-normal-heart/an-epidemic.shtml"></a>
+                        <div id="my-cool-chart"></div>
+                        <div id="chartdiv"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="pieContent">
+                            <ul>
+                                <li class="active stock" (click)="onClick()">Stocks
+                                    <span>
+                                        <p>Individual publicly traded U.S. & international companies of various sizes,
+                                            styles and sectors.</p>
+                                    </span>
+                                </li>
+                                <li class="bond" (click)="onClick1()">Bonds
+                                    <span>
+                                        <p>Debt issued by the U.S. government, agencies, and companies.</p>
+                                    </span>
+                                </li>
+                                <li class="etf" (click)="onClick2()">ETFs
+                                    <span>
+                                        <p>An exchange-traded fund (ETF) is a basket of stocks packaged into one
+                                            security.</p>
+                                    </span>
+                                </li>
+                                <li class="alternatives" (click)="onClick3()">
+                                    Alternatives
+                                    <span>
+                                        <p>Real estate ETFs, REITs (Real Estate Investment Trusts), gold, and
+                                            commodities.</p>
+                                    </span>
+                                </li>
+                                <li class="cash" (click)="onClick4()">Cash
+                                    <span>
+                                        <p>Money Market & treasury funds.</p>
+                                    </span>
+                                </li>
+                                <li class="cryptocurrency" (click)="onClick5()">
+                                    Cryptocurrency
+                                    <span>
+                                        <p>Only for very aggressive risk profiles. Bitcoin is an interesting hedge
+                                            against inflation.</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="performance boxs">
+    <div class="container-fluid">
+        <div class="performaceInner">
+            <h2 class="mainHead">Our <span class="colorBlue"> Performance.</span></h2>
+            <div class="performanceSlider">
+                <!-- <div class="sliderInput">
+                    <input type="text" class="performDrop" value="Self directed premium" readonly>
+                    <span><i class="fa fa-sort-down"></i></span>
+                </div>
+                <ul>
+                    <li>Self directed premium</li>
+                    <li>Self directed premium 2</li>
+                </ul> -->
+
+                <select name="Starbucks" class="form-control">
+                    <option value="" *ngFor="let item of performanceList">{{item}}</option>
+                </select>
+            </div>
+
+            <div class="performaceTable">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Mudani</th>
+                        <th>S&P 500</th>
+                    </tr>
+                    <tr class="trBorder">
+                        <td><strong>Year to Date Return</strong> </td>
+                        <td>55%</td>
+                        <td>3.7%</td>
+                    </tr>
+                    <!-- <tr>
+                        <td><strong>Annualized Return</strong> </td>
+                        <td>17.3%</td>
+                        <td>10.2%</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

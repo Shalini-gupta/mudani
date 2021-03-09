@@ -1,0 +1,484 @@
+<app-header></app-header>
+
+<section class="retairement howWorkit boxs">
+    <div class="container-fluid">
+        <div class="retairmentInner">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="retairmentLeft">
+                        <h2 class="mainHead">
+                            Do it yourself, <br> We do it <span class="colorBlue">for you, <br> or both.</span>
+                        </h2>
+                        <p class="headmain">A dual investing platform allowing you to choose from a
+                            self-directed trading account, a robo advised managed account, or both on one single
+                            platform.</p>
+
+                        <div class="indexleftLow">
+                            <a [routerLink]="['/sign-up']" class="btnsAll text-transform">Get started</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="retairmentRight how_it_work">
+                        <img src="assets/images/howItWork.png" alt="howItWork">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="selfDirected workDirected boxs">
+    <div class="container-fluid">
+        <div class="selfDirectInner" style="margin: 0 0 40px 0">
+            <h2 class="mainHead">
+                Pick your <span class="colorBlue">path.</span>
+            </h2>
+        </div>
+        <div class="selfFlex">
+
+            <div class="selfBox selfBox2 active" id="Self1">
+                <h2 class="inner">Self-directed account</h2>
+                <p class="headmain">A “do it yourself” investing account. A self-directed brokerage account is one in
+                    which you have complete control over how you invest & trade your money.</p>
+                <a [routerLink]="['/self-directed']" class="btnsAll">Learn more</a>
+            </div>
+
+            <div class="selfBox selfBox2 " id="Self2">
+                <h2 class="inner">Managed account</h2>
+                <p class="headmain">A “we do it for you” investing account. A separately managed account is a portfolio
+                    of securities managed on your behalf by a professional asset management firm. Mudani’s <b>
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#advisor">robo advisor</a> </b>
+                    takes care of it all for you.</p>
+                <a [routerLink]="['/maanged-subtab']" class="btnsAll">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="howWork sliderArrow howWork2 boxs">
+    <div class="container-fluid">
+        <h2 class="mainHead">How it works</h2>
+        <p class="headmain">In five simple steps.</p>
+
+
+        <owl-carousel-o [options]="customOptions55">
+            <ng-template carouselSlide>
+                <div class="DirectedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Tell us about you.</h2>
+                        <p class="headmain">We’ll ask you a short series of questions to be in compliant with
+                            regulators.</p>
+                    </div>
+                </div>
+
+                <div class="ManagedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Tell us about you. </h2>
+                        <p class="headmain">We’ll ask you a short series of questions to determine your financial
+                            profile,
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#risk">risk tolerance</a>, and
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#risk">time horizon</a>.
+                        </p>
+                    </div>
+                </div>
+
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="DirectedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Make your own basket.</h2>
+                        <p class="headmain">You can browse thousands of stocks, ETFs, crypto to add to your portfolio.
+                            Or, you can skip right to trading.
+                            <!-- <a [routerLink]="['/themantic']">Thematic Baskets</a> -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ManagedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Get a customized portfolio. </h2>
+                        <p class="headmain">Mudani’s <a href="javascript:void(0)" data-toggle="modal"
+                                data-target="#advisor">robo advisor</a> will generate a customized investment portfolio
+                            for you consisting of stocks, ETF’s, and even crypto.</p>
+                    </div>
+                </div>
+
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="DirectedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Fund your account.</h2>
+                        <p class="headmain">Link your external bank account securely and seamlessly through our app and
+                            make a deposit.</p>
+                    </div>
+                </div>
+
+                <div class="ManagedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Fund your account. </h2>
+                        <p class="headmain">Link your external bank account securely and seamlessly through our app and
+                            make a deposit.</p>
+                    </div>
+                </div>
+
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="DirectedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Start Investing.</h2>
+                        <p class="headmain">Start trading and build up your portfolio to create a better financial
+                            future.</p>
+                    </div>
+                </div>
+
+                <div class="ManagedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Track your portfolio. </h2>
+                        <p class="headmain">Monitor the performance of your portfolio in real-time at your fingertips.
+                        </p>
+                    </div>
+                </div>
+
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="DirectedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Track your account</h2>
+                        <p class="headmain">Monitor the performance of your portfolio in real-time at your fingertips.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ManagedAccount">
+                    <div class="whiteCard">
+                        <h2 class="inner">Add a thematic basket. </h2>
+                        <p class="headmain">Add a specialty thematic portfolio to get exposure to certain themes or
+                            sectors. </p>
+                    </div>
+                </div>
+
+            </ng-template>
+        </owl-carousel-o>
+
+        <div class="dotsCss pt-5">
+            <ul>
+                <li class="custom-next-click active"></li>
+                <li class="custom-next-click active"></li>
+                <li class="custom-next-click active none"></li>
+                <li class="custom-next-click"></li>
+                <li class="custom-next-click"></li>
+            </ul>
+        </div>
+
+        <div class="sliderDown">
+            <p>Can’t choose? Check out our questionnaire
+                <a [routerLink]="['/pricing']"> here</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="accountType boxs">
+    <div class="container-fluid">
+        <div class="accoutnInner">
+            <h2 class="mainHead">Account types to <span class="colorBlue">choose from </span> </h2>
+
+            <!-- <p class="headmain">Choose from the below. Please note Joint and IRA accounts are only available to premium members.</p> -->
+            <div class="typeOpen">
+                <div class="typeFirst">
+                    <div class="typeImg">
+                        <img src="assets/images/individual.png" alt="individual">
+                    </div>
+                    <div class="typeContent">
+                        <h2 class="inner">INDIVIDUAL</h2>
+                        <p class="headmain">Set up an individual taxable account for your general investing needs.</p>
+                    </div>
+                </div>
+                <div class="typeFirst">
+                    <div class="typeImg">
+                        <img src="assets/images/joint.png" alt="individual">
+                    </div>
+                    <div class="typeContent">
+                        <h2 class="inner">JOINT</h2>
+                        <p class="headmain">Establish a joint account with a relative, spouse, or domestic partner.</p>
+                        <p class="headmain"><b><i>* Premium only.</i></b></p>
+                    </div>
+                </div>
+                <div class="typeFirst">
+                    <div class="typeImg">
+                        <img src="assets/images/ira.png" alt="individual">
+                    </div>
+                    <div class="typeContent">
+                        <h2 class="inner">IRA</h2>
+                        <p class="headmain">A traditional or ROTH retirement account. Premium members will receive
+                            access to IRA’s.</p>
+                        <p class="headmain"><b><i>* Premium only.</i></b></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div clsss="typePara">
+                <p class="typeParaa">A traditional or ROTH retirement account. Premium members will receive access to IRA’s.
+                    <a [routerLink]="['/investment']">Learn more</a>
+                </p>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<section class="portfolioTime boxs">
+    <div class="container-fluid">
+        <div class="portfolioIn">
+            <h2 class="mainHead">How your portfolio could<br>
+                <span class="colorBlue">grow</span> over time?</h2>
+            <p class="headmain">Your Mudani portfolio has the potential to compound capital at a high rate. Calculate it
+                yourself below!</p>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="portSlid">
+                    <ul>
+                        <li>
+                            <div class="slidecontainer slidecontainer2">
+                                <h2>Initial Amount -<span> ${{copyPrincipalAmount}}</span></h2>
+                                <div class="rSlider">
+                                    <span class="slide slider slide1"></span>
+                                    <input id="range" type="range" min="1000" max="250000"
+                                        (change)="initialAmount($event.target.value)">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slidecontainer slidecontainer2">
+                                <h2>Monthly Contribution - <span> ${{contribution}}</span></h2>
+                                <div class="rSlider">
+                                    <span class="slide slider slide2"></span>
+                                    <input id="range1" type="range" min="0" max="1000"
+                                        (change)="monthlyContribution($event.target.value)">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="slidecontainer slidecontainer2">
+                                <h2>Time Horizon - <span> {{timeHorizon}} Years</span></h2>
+                                <div class="rSlider">
+                                    <span class="slide slider slide3"></span>
+                                    <input id="range2" type="range" min="0" max="15"
+                                        (change)="changeTime($event.target.value)">
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="fullSlider">
+                                <div class="slidecontainer slidecontainer2" style="width: 70%; margin: 0px 0 0px;">
+                                    <h2 style="margin: 0;">&nbsp;</h2>
+                                    <div class="rSlider">
+                                        <span class="slide slider slide5" style="width:0%"></span>
+                                        <input id="range5" type="range" min="0" max="2" value="1"
+                                            (change)="selectRange($event.target.value)">
+                                    </div>
+                                </div>
+                                <ul style="width: 70%; margin: 20px 0 0 0; ">
+                                    <li>Weak</li>
+                                    <li>Normal</li>
+                                    <li>Strong</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+
+                <div class="fullSlider">
+                    <div class="slidecontainer slidecontainer2" style="margin: 0px auto 0px;">
+                        <h2 class="market" style="margin: 0 0 0px 0; text-align: right;">Market Return</h2>
+                    </div>
+                </div>
+
+                <div class="radioAll2" style="padding-top: 20px;">
+                    <div class="radio">
+                        <input id="radio-1" name="radio" type="radio" checked (click)="marketData('all')">
+                        <label for="radio-1" class="radio-label"><span class="radioAll radio1"></span>All</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-2" name="radio" type="radio" [checked]="weakCheck"
+                            (click)="marketData('weak'); rVal=5">
+                        <label for="radio-2" class="radio-label"><span class="radioAll radio2"></span>Weak</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-3" name="radio" type="radio" [checked]="normalCheck"
+                            (click)="marketData('normal'); rVal=10">
+                        <label for="radio-3" class="radio-label"><span class="radioAll radio3"></span>Normal</label>
+                    </div>
+                    <div class="radio">
+                        <input id="radio-4" name="radio" type="radio" [checked]="strongCheck"
+                            (click)="marketData('strong'); rVal=15">
+                        <label for="radio-4" class="radio-label"><span class="radioAll radio4"></span>Strong</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="chartt boxs pt-5 pb-5">
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        </section>
+
+        <div class="investmentline">
+            <p class="investment" *ngIf="futureInvestment && chartType == 'weak'" style="background-color: #d3ebfb;">
+                ${{ curreencyFormat(futureInvestment) }}</p>
+            <p class="investment" *ngIf="futureInvestment && chartType == 'normal'" style="background-color: #9fd7fa;">
+                ${{ curreencyFormat(futureInvestment) }}</p>
+            <p class="investment" *ngIf="futureInvestment && chartType == 'strong'" style="background-color: #85ccfb;">
+                ${{ curreencyFormat(futureInvestment) }}</p>
+            <p class="investment" *ngIf="weakInvestment" style="background-color: #d3ebfb;">
+                ${{ curreencyFormat(weakInvestment) }}</p>
+            <p class="investment" *ngIf="normalInvestment" style="background-color: #9fd7fa;">
+                ${{ curreencyFormat(normalInvestment) }}</p>
+            <p class="investment" *ngIf="strongInvestment" style="background-color: #85ccfb;">
+                ${{ curreencyFormat(strongInvestment) }}</p>
+        </div>
+
+        <div class="fullSlider">
+            <!-- <div class="slidecontainer slidecontainer2">
+                <h2>Market Return</h2>
+                <div class="rSlider">
+                    <span class="slide slider slide5" style="width:0%"></span>
+                    <input id="range5" type="range" min="0" max="2" value="0"
+                        (change)="selectRange($event.target.value)">
+                </div>
+            </div> 
+            <ul>
+                <li>Weak</li>
+                <li>Normal</li>
+                <li>Strong</li>
+            </ul> -->
+            <div class="dicleared">
+                <a [routerLink]="['/themantic']">
+                    Disclosure! </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="howVideo boxs">
+    <div class="container">
+        <div class="howContent">
+            <h2 class="mainHead">How it all works in one video. </h2>
+            <p class="headmain">Play the video below to learn more.</p>
+        </div>
+    </div>
+
+    <div id="wrapper" class="workAllvid">
+        <div class="btnNot">
+            <button id="fullpage-button" style="display: none">Toggle Fullscreen Page</button>
+            <button id="fullpage-exit-button" style="display: none">Exit Fullscreen Page</button>
+        </div>
+        <div class="videoShows">
+            <video id="video" width="100%" height="420px" controls>
+                <source src="assets/video/mudani-animation.mp4">
+            </video>
+        </div>
+        <button id="video-button" class="playRight"><i class="fa fa-play"></i></button>
+    </div>
+</section>
+
+<section class="freuentlyAsk boxs">
+    <div class="container-fluid">
+        <div class="frequantAll">
+            <h2 class="mainHead">Frequently asked <span class="colorBlue">questions</span></h2>
+        </div>
+        <div class="AllAccordian">
+            <div class="discord discordFree ">
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class="active">
+                        <i class="fa fa-minus"></i>
+                        <span>What is a robo advisor?</span>
+                    </a>
+                    <div class="content content2" style="display: block;">
+                        <div class="cont_full freqContet">
+                            <p>Robo-advisors are digital platforms that provide automated algorithm-driven financial
+                                advice. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class="">
+                        <i class="fa fa-plus"></i>
+                        <span>Is my money safe?</span>
+                    </a>
+                    <div class="content content2" style="display: none;">
+                        <div class="cont_full freqContet">
+                            <p>Our custodian, APEX Clearing, is a member of the Securities Investor Protection
+                                Corporation (SIPC). The securities in your account are protected up to $500,000 through
+                                SIPC including $250,000 for cash.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="seeAll">
+                <a href="javascript:void(0)" class="btnsAll freqBlockShow">See All</a>
+
+            </div> -->
+        </div>
+    </div>
+</section>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+<div class="ModalBox">
+    <div id="advisor" class="modal " role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a class="CloseModal" data-dismiss="modal">×</a>
+                        <div class="Thanks2">
+                            <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal">×</a>
+
+                            <p style="font-size: 16px !important; font-family: 'RobotoRegular'; line-height: 31px;">
+                                Robo-advisors are digital platforms that provide automated algorithm-driven financial
+                                advice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="risk" class="modal " role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline">
+                        <a class="CloseModal" data-dismiss="modal">×</a>
+                        <div class="Thanks2">
+                            <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal">×</a>
+
+                            <p style="font-size: 16px !important; font-family: 'RobotoRegular'; line-height: 31px;">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<app-footer></app-footer>

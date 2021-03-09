@@ -1,0 +1,325 @@
+.FantasyArea{
+    background-color: #f4fdff;
+    padding: 100px 0 50px; 
+}
+
+.FantasyArea .FantasyLeft{ margin: 0 }
+
+.FantasyArea .FantasyLeft h1{
+	margin: 0 0 20px 0;
+    font-family: var(--pregular);
+    font-size: 45px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 45px;
+}
+
+.FantasyArea .FantasyLeft h1 sup{ 
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.FantasyArea .FantasyLeft h1 span{ 
+	color: var(--colorLblue); 
+}
+
+.FantasyArea .FantasyLeft h2{
+	margin: 0 0 10px 0;
+    font-family: 'RobotoRegular';
+    font-size: 23px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.FantasyArea .FantasyLeft p{
+	margin: 0 0 20px 0;
+    font-size: 18px;
+    color: var(--colorBlue);
+    font-family: var(--regular);
+    line-height: 32px;
+}
+
+.FantasyArea .FantasyLeft ul{
+    margin: 30px 0 0 0;
+}
+
+.FantasyArea .FantasyLeft ul li{ 
+	display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.FantasyArea .FantasyLeft ul li a{     
+	display: block; 
+}
+
+.FantasyArea .FantasyRight{
+    width: 55%;
+    margin: auto;
+}
+
+.FantasyArea .FantasyRight img{ 
+	width: 100% 
+}
+
+.HowWorkArea{
+    padding: 50px 0;
+}
+
+.HowWorkArea .HowWorkLeft{
+	margin: 0;
+}
+
+.HowWorkArea .HowWorkLeft img{
+	width: 75%;
+    margin: auto;
+    display: block;
+}
+
+.HowWorkArea .HowWorkRight{
+	margin: 0;
+}
+
+.HowWorkArea .HowWorkRight h3{
+    margin: 0 0 20px 0;
+    font-family: var(--pregular);
+    font-size: 45px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 45px;
+}
+
+.HowWorkArea .HowWorkRight h3 span{
+	color: var(--colorLblue);
+}
+
+.HowWorkArea .HowWorkRight p{
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: var(--colorBlue);
+    font-family: var(--regular);
+    line-height: 32px;
+}
+
+.HowWorkArea .HowWorkRight p strong{
+	margin: 0;
+}
+
+.HowWorkArea .HowWorkRight p:last-child{
+	margin: 0
+}
+
+.GamesArea{ 
+    background-color: #f4fdff;
+    padding: 50px 0px;
+}
+
+.GamesArea h1{ 
+	margin: 0 0 50px 0;
+    font-family: var(--pregular);
+    font-size: 45px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 45px;
+    text-align: center;
+}
+
+.GamesArea .nav-tabs{
+    margin: 0 0 50px;
+    border: none;
+    justify-content: center;
+}
+
+.GamesArea .nav-tabs li{
+    margin: 0 15px;
+}
+
+.GamesArea .nav-tabs li a{
+	font-size: 18px;
+    color: rgba(8, 43, 60, 0.5);
+    font-family: var(--regular);
+    padding: 15px 30px 15px;
+    border-radius: 10px;
+    border: solid 2px #afb6bb;
+    background-color: rgba(175, 182, 187, 0.6);
+    width: 250px;
+    display: block;
+    text-align: center;
+}
+
+.GamesArea .nav-tabs li a.active{
+	color: var(--colorWhite);
+    background: var(--colorLblue);
+    border-color: var(--colorLblue);
+    opacity: 1;
+}
+
+.GamesArea .GamesLeft{
+	text-align: center;
+}
+ 
+.GamesArea .GamesLeft img{ width: 50%; max-width: 250px; }
+.GamesArea .GamesRight{ margin: 0 }
+
+.GamesArea .GamesRight h3{
+	margin: 0 0 10px 0;
+    font-family: var(--pregular);
+    font-size: 30px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 25px;
+}
+
+.GamesArea .GamesRight  h6{
+    margin: 15px 0 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.GamesArea .GamesRight p{
+margin: 0;
+    font-size: 16px;
+    color: var(--colorBlue);
+    font-family: var(--regular);
+    line-height: 30px;
+}
+
+.GamesArea .GamesRight .accordian-group{ margin: 20px 0 0 0 }
+
+.GamesArea .GamesRight  .card{
+border: none;
+    box-shadow: 0px 0px 5px #ddd;
+    border-radius: 4px;
+}
+
+
+.GamesArea .GamesRight  .card+.card{
+    margin: 20px 0 0 0;
+   }
+
+.GamesArea .GamesRight  .card .card-header{
+	cursor: pointer; 
+    background-color: transparent;
+    padding: 11px 20px;
+    border:none;
+}
+
+.GamesArea .GamesRight  .card .card-header h4{    
+    font-size: 20px;
+    font-family: var(--pregular);
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.GamesArea .GamesRight  .card .card-body{
+	border-top: 1px solid #ddd
+}
+
+.GamesArea .GamesRight  .card .card-body p{
+    font-size: 15px;
+    line-height: 29px;
+}
+
+
+.LeaderboardArea{
+    padding: 50px 0;
+    }
+
+.LeaderboardArea .LeaderboardLeft{    text-align: center;}
+.LeaderboardArea .LeaderboardLeft img{ width: 50%; max-width: 250px; }
+
+.LeaderboardArea .LeaderboardRight{ margin: 0 }
+
+.LeaderboardArea .LeaderboardRight h3{
+    margin: 0 0 20px 0;
+    font-family: var(--pregular);
+    font-size: 45px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 45px;
+    }
+
+.LeaderboardArea .LeaderboardRight p{
+    margin: 0 0 20px 0px;
+    font-size: 16px;
+    color: var(--colorBlue);
+    font-family: var(--regular);
+    line-height: 30px
+    }
+
+.LeaderboardArea .LeaderboardRight a{
+    font-size: 16px;
+    color: var(--colorWhite);
+    background: var(--colorLblue);
+    font-family: var(--bold);
+    border-radius: 50px;
+    padding: 15px 35px; 
+    text-align: center;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+.FeatureArea{
+        background-color: #f4fdff;
+    padding: 50px 0px 0;
+}
+
+.FeatureArea .FeatureHead{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.FeatureArea .FeatureHead h1{
+    margin: 0 0 20px 0;
+    font-family: var(--pregular);
+    font-size: 45px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 45px;
+}
+
+.FeatureArea .FeatureHead p{
+font-family: 'RobotoRegular';
+    line-height: 28px;
+    font-size: 17px;
+}
+
+.FeatureArea .FeatureBox{
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.FeatureArea .FeatureBox figure{
+    margin: 0 auto 30px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #0091da;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FeatureArea .FeatureBox figure img{
+    width: 50%
+}
+
+.FeatureArea .FeatureBox h3{
+    margin: 0 0 20px 0;
+    font-family: var(--pregular);
+    font-size: 35px;
+    text-shadow: 0px 4px 10px rgb(0 0 0 / 21%);
+    color: #082b3c;
+    line-height: 35px;
+}
+
+.FeatureArea .FeatureBox p{
+    font-family: 'RobotoRegular';
+    line-height: 28px;
+    font-size: 15px;
+}
+

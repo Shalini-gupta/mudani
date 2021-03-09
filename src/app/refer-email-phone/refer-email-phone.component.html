@@ -1,0 +1,56 @@
+<section class="faqAll">
+    <div class="container">
+        <div class="giftImg">
+            <img src="https://mudani.s3-us-west-1.amazonaws.com/gift.jpg" alt="gift" class="img-fluid">
+        </div>
+        <div class="faqInner">
+            <h2>Hey, {{referDetails?.friendName}}! <br> {{referDetails?.yourName}} sent you <span
+                    class="colorBlue">free</span> stock <br>of Helios Technologies Inc.
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="claim">
+    <div class="container">
+        <div class="claimInner">
+            <h2>How to claim your stock</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged</p>
+            <div class="refealCode refealCode2">
+                <form [formGroup]="phoneForm" (ngSubmit)="onPhoneSubmit()">
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="+91" formControlName="phoneNumber">
+                        <button type="submit">Text Me The App</button>
+                    </div>
+                </form>
+            </div>
+            <div class="refealBtn">
+                <ul>
+                    <li><a href="javascript:void(0)"><img src="imgs/btn1.jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="imgs/btn2.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faqConn">
+    <div class="container">
+        <h2>FAQ</h2>
+        <div class="faqsCon">
+            <h3>faq1</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+        </div>
+        <div class="faqsCon">
+            <h3>faq2</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+        </div>
+    </div>
+</section>

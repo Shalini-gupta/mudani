@@ -1,0 +1,281 @@
+<app-header></app-header>
+
+
+<section class="retairement stockback boxs">
+    <div class="container-fluid">
+        <div class="retairmentInner stocInner">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="retairmentLeft">
+                        <h2 class="mainHead"><span class="earn">Earn</span> More Money</h2>
+                        <p class="headmain">Lorem Ipsum is simply dummy text of the printing and typ e setting industry.
+                            Lorem Ipsum has been the industry's <br> standard dummy text..</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="stockImg">
+                        <img src="assets/images/stock.png" alt="stock">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="stockSlider">
+    <div class="container-fluid">
+        <div class="stockSlidIn">
+
+        </div>
+    </div>
+</section> -->
+<section class="linkCard">
+    <div class="shopStock boxs">
+        <div class="container-fluid">
+
+            <div class="frame">
+                <div class="center">
+                    <div class="carousel">
+                        <div class="pre">Spend $</div>
+                        <div class="change_outer">
+                            <!-- <div class="change_inner">
+                                <div class="element"><i class='fa fa-apple'></i></div>
+                                <div class="element">APPL</div>
+                                <div class="element"><i class='fa fa-apple'></i></div>
+                                <div class="element">APPL</div>
+                                <div class="element"><i class='fa fa-apple'></i></div>
+                                <div class="element">APPL</div>
+
+                            </div> -->
+                            <input type="text" class="form-control" value="" placeholder="00" (keyup)="spend($event)">
+                        </div>
+                        <div class="pre"> Round up $</div>
+                        <div class="change_outer">
+                            <input type="text" class="form-control" value={{roundValue}}>
+                            <!-- <div class="change_inner">
+                                <div class="element">APPL</div>
+                                <div class="element"><i class='fa fa-apple'></i></div>
+                                <div class="element">APPL</div>
+                                <div class="element"><i class='fa fa-apple'></i></div>
+                                <div class="element">APPL</div>
+                                <div class="element"><i class='fa fa-apple'></i></div>
+                            </div> -->
+                        </div>
+                        <div class="pre">stock. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="stockPoso">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="linkCardIn">
+                        <h2 class="inner">Link your card <img src="assets/images/card.png" alt=""> </h2>
+                        <p class="headmain">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+
+                            vestibulum commodo. Nam viverra sapien et purus lobortis, sed feugiat neque finibus.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="linkCardIn">
+                        <h2 class="inner">Shop <img src="assets/images/shop.png" alt=""></h2>
+                        <p class="headmain">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum
+                            vestibulum commodo. Nam viverra sapien et purus lobortis, sed feugiat neque finibus.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="linkCardIn">
+                        <h2 class="inner">Earn <img src="assets/images/line.png" alt=""></h2>
+                        <p class="headmain">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum
+                            vestibulum commodo. Nam viverra sapien et purus lobortis, sed feugiat neque finibus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dotsCss StockdotsCss pt-5 text-center">
+                <ul class="pt-5">
+                    <li class="custom-next-click" ></li>
+                    <li class="custom-next-click" ></li>
+                    <li class="custom-next-click" ></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="stockCash">
+    <div class="container-fluid">
+        <div class="stockCashIn">
+            <h2 class="mainHead">Round up Your Change</h2>
+            <p class="headmain">See what a difference Bits of Stock can make.</p>
+        </div>
+        <div class="stockDrop">
+            <div class="dropAl">
+                <h2>I use my debit or credit card<span class="spanAll">
+                        <span class="AddSpan">
+                            <select name="Starbucks" class="form-control" style="width: 100px;padding: 10px;" (change)="roundUp($event)">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                            </select>
+                            <!-- <input type="text" class="form-control" placeholder="Starbucks" readonly> -->
+                            <!-- <span class="arrowas"><i class="fa fa-sort-down"></i></span> -->
+
+                            <!-- <ul>
+                    <li>Self</li>
+                    <li>Self2</li>
+                </ul> -->
+                        </span>
+                    </span>times a week</h2>
+            </div>
+            <div class="slidecontainer">
+                <h2> ${{roundValue}} <span>/ Month</span></h2>
+                <!-- <div class="rSlider">
+                    <span class="slide"></span>
+                  <input id="range" type="range" min="0" max="50000" >
+                  </div> -->
+                <div class="dropAl">
+                    <h2>Automatically invested into your Mudani account</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- <section class="accountMudani boxs">
+ <div class="container-fluid">
+     <div class="accountMudIn">
+         <h2 class="mainHead"><span class="colorBlue">Start today!</span> Open an accout with<br> Mudani</h2>
+     </div>
+     <ul class="accountSocial">
+        <owl-carousel-o [options]="customOptions56">
+            <ng-template carouselSlide>
+                <li><img src="assets/images/netflix.png" alt="social"></li>
+            </ng-template>
+            <ng-template carouselSlide>
+                <li><img src="assets/images/nike.png" alt="social"></li>
+            </ng-template>
+            <ng-template carouselSlide>
+                <li><img src="assets/images/spotify.png" alt="social"></li>
+            </ng-template>
+            <ng-template carouselSlide>
+                <li><img src="assets/images/amazon.png" alt="social"></li>
+            </ng-template>
+            <ng-template carouselSlide>
+                <li><img src="assets/images/uberEat.png" alt="social"></li>
+            </ng-template>
+            
+        </owl-carousel-o>
+     </ul>
+     <ul class="socualAlI">
+         <li><a href="https://play.google.com/store"><img src="assets/images/play-store.png" alt=""></a></li>
+         <li><a href="https://www.apple.com/in/app-store/"><img src="assets/images/app-store.png" alt=""></a></li>
+    </ul>
+ </div>
+</section> -->
+
+<section class="freuentlyAsk boxs">
+    <div class="container-fluid">
+        <div class="frequantAll">
+            <h2 class="mainHead">Frequently asked <span class="colorNeww">questions</span></h2>
+        </div>
+        <div class="AllAccordian">
+            <div class="discord discordFree ">
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class="active"><i class="fa fa-minus"></i><span>What are thematic
+                            portfolios?</span></a>
+                    <div class="content content2" style="display: block;">
+                        <div class="cont_full freqContet">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class=""><i class="fa fa-plus"></i><span>What are thematic
+                            portfolios?</span></a>
+                    <div class="content content2" style="display: none;">
+                        <div class="cont_full freqContet">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class=""><i class="fa fa-plus"></i><span>What are thematic
+                            portfolios?</span></a>
+                    <div class="content content2" style="display: none;">
+                        <div class="cont_full freqContet">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class=""><i class="fa fa-plus"></i><span>What are thematic
+                            portfolios?</span></a>
+                    <div class="content content2" style="display: none;">
+                        <div class="cont_full freqContet">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="set freqBlock set2 ">
+                    <a href="javascript:void(0)" class=""><i class="fa fa-plus"></i><span>What are thematic
+                            portfolios?</span></a>
+                    <div class="content content2" style="display: none;">
+                        <div class="cont_full freqContet">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="freqBlockHide">
+                    <div class="set freqBlock set2 ">
+                        <a href="javascript:void(0)" class=""><i class="fa fa-plus"></i><span>What are thematic
+                                portfolios?</span></a>
+                        <div class="content content2" style="display: none;">
+                            <div class="cont_full freqContet">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                    Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set freqBlock set2 ">
+                        <a href="javascript:void(0)" class=""><i class="fa fa-plus"></i><span>What are thematic
+                                portfolios?</span></a>
+                        <div class="content content2" style="display: none;">
+                            <div class="cont_full freqContet">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Etiam vulputate quam nec velit varius, eget sodales enim auctor.
+                                    Donec aliquet risus quis lectus semper, et sagittis est bibendum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seeAll">
+                <a href="javascript:void(0)" class="btnsAll freqBlockShow">See All</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
